@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>User Feedback</h2>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="usernam" maxlength="15" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="13" max="120" required>
+
+        <label for="favorite">Favorite Language</label>
+        <select name="favorite" name="favorite" required>
+            <option value="">-- Please Choose --</option>
+            <option value="html"> HTML </option>
+            <option value="css"> CSS </option>
+            <option value="js"> JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+
+        <label>Experience Level</label>
+        <div class="radio-group">
+            <label><input type="radio" name="experience" value="beginner" required>Beginner</label>
+            <label><input type="radio" name="experience" value="intermediate" required>Intermediate</label>
+            <label><input type="radio" name="experience" value="advanced" required>Advanced</label>
+        </div>
+
+        <div class="check-box">
+            <label><input type="checkbox" name="topics" value="frontend" required>Front-end Developer</label>
+            <label><input type="checkbox" name="topics" value="backend" required>Back-end Developer</label>
+            <label><input type="checkbox" name="topics" value="design" required>UX/UI Design</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

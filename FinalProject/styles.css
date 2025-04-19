@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #4e5d6c;
+    --secondary-color: #f4f4f9;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    background: var(--secondary-color);
+    padding-top: 70px;
+  }
+  
+  .navbar {
+    background-color: var(--secondary-color) !important;
+  }
+  
+  /* Hero with dark overlay for readability */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg') center/cover no-repeat;
+  }
+  
+  .hero .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+  }
+  
+  /* Section headings spacing */
+  section h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Skill card styling */
+  .skill-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .skill-card i {
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+  
+  /* Progress bars */
+  .progress {
+    height: 0.5rem;
+    background: #e9ecef;
+  }
+  
+  .progress-bar {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+  
+  /* Card images & hover interaction */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  #project-grid .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #project-grid .card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  }
+  
+  #project-grid .card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  /* Contact form */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #form-status {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #fff;
+    border-top: 1px solid #dee2e6;
+  }
+  
